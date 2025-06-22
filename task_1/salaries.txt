@@ -1,0 +1,13 @@
+Alex Korp,3000
+Nikita Borisenko,2000
+Sitarama Raju,1000
+Maria Ivanova,2500
+John Smith,3200
+Olena Petrenko,2700
+Carlos Rodriguez,2100
+Wei Zhang,2900
+Amir Khan,1800
+Emma Brown,3100
+Yuki Tanaka,2300
+Liam Clark,2600
+Natalie Peter,2400
