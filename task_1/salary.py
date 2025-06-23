@@ -27,5 +27,5 @@ def total_salary(path):
         return 0, 0
     average = total / count
     return round(total), round(average)
-total, average = total_salary("salaries.txt")
+total, average = total_salary("task_1/salaries.txt")
 print(f"Загальна сума: {total}, Середня: {average}")
