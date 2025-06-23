@@ -1,6 +1,3 @@
-# import os
-# print(os.getcwd())
-  
 def total_salary(path):
     total = 0
     count = 0
@@ -17,10 +14,10 @@ def total_salary(path):
                     except ValueError:
                         continue
     except FileNotFoundError:
-        print(f"Файл '{path}' не знайдено")
+        print(f"File '{path}' not found")
         return 0, 0
     except Exception as e:
-        print(f"Сталася помилка при читанні файлу: {e}")
+        print(f"An error occurred while reading file: {e}")
         return 0, 0
     
     if count == 0:
@@ -28,4 +25,4 @@ def total_salary(path):
     average = total / count
     return round(total), round(average)
 total, average = total_salary("task_1/salaries.txt")
-print(f"Загальна сума: {total}, Середня: {average}")
+print(f"Total: {total}, Avarage: {average}")

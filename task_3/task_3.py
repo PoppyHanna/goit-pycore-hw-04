@@ -14,19 +14,19 @@ def show_tree(path, indent=""):
             else:
                 print(indent + Fore.GREEN + item.name)
     except Exception as e:
-        print(Fore.RED + f"Помилка: {e}")
+        print(Fore.RED + f"Error: {e}")
 if __name__ == "__main__":
     if len(sys.argv) < 2:
-        print("Будь ласка вкажіть шлях до директорії")        
+        print("Please enter the directory path")        
         sys.exit()
     dir_path = Path(sys.argv[1])
 
     if not dir_path.exists():
-        print("Шлях не існує")
+        print("Path does not exist")
         sys.exit()
     if not dir_path.is_dir():
-        print("Це не дерикторія")
+        print("This is not a directory")
         sys.exit()
     
-    print("Вміст дерикторії:\n")
+    print("Directory content:\n")
     show_tree(dir_path)
